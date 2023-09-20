@@ -76,7 +76,6 @@ exports.getLoggedUserCart = asyncHandler(async(req , res , next) => {
   }
   calcTotalCartPrice(cart);
 res.status(200).json({ status : "success" , result : cart.cartItems.length , data : cart});
-
 })
 
 

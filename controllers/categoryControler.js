@@ -7,19 +7,6 @@ const { uploadSingleImage } = require("../middlewares/uploadImageMiddleWare");
 
 
 
-//diskStorage engine
-// const multerStorage = multer.diskStorage({
-//   destination : function (req , file , cb) {
-//    cb(null , "uploads/Categories")
-//   },
-//   filename : function (req , file , cb) {
-//    const ext = file.mimetype.split("/")[1];
-//    const fileName = `category-${uuidv4()}-${Date.now()}.${ext}`;
-//    cb(null , fileName);
-//   }
-// });
-
-
 
 //upload single image
 exports.uploadCategoryImage = uploadSingleImage("image");
